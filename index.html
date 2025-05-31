@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskForge - Task Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>TaskForge</h1>
+    <nav>
+      <a href="#profile">Profiles</a>
+      <a href="#tasks">Tasks</a>
+      <a href="#help">Help</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Profile Section -->
+    <section id="profile">
+      <h2>Profile Management</h2>
+      <div class="form">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="role" placeholder="Role">
+        <input type="text" id="phone" placeholder="Phone">
+        <input type="email" id="email" placeholder="Email">
+        <button onclick="addProfile()">Add Profile</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th><th>Role</th><th>Phone</th><th>Email</th><th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="profileList"></tbody>
+      </table>
+    </section>
+
+    <!-- Task Section -->
+    <section id="tasks">
+      <h2>Task Management</h2>
+      <div class="form">
+        <input type="text" id="taskName" placeholder="Task Name">
+        <input type="text" id="assignedTo" placeholder="Assigned To">
+        <input type="date" id="deadline">
+        <select id="difficulty">
+          <option value="Easy">Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>
+        </select>
+        <button onclick="addTask()">Add Task</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Task</th><th>Assigned To</th><th>Deadline</th><th>Difficulty</th><th>Status</th><th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="taskList"></tbody>
+      </table>
+    </section>
+
+    <!-- Help Section -->
+    <section id="help">
+      <h2>Need Help?</h2>
+      <p>Email us at <a href="mailto:kshsrrm@gmail.com">kshsrrm@gmail.com</a></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

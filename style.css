@@ -1,0 +1,69 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7ff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #002f6c;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+h2 {
+  color: #002f6c;
+}
+
+main {
+  padding: 2rem;
+}
+
+.form input, .form select {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: orange;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkorange;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+thead {
+  background-color: #e1e9ff;
+}
+
+section {
+  margin-bottom: 3rem;
+}
